@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>fetch Typing Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+    <div class="container">
+        <h1>Typing Practice</h1>
+        <div class="mode-toggle">
+            <label>
+                <input type="checkbox" id="imageMode">
+                Image Mode
+            </label>
+        </div>
+        <div id="paragraph" class="paragraph"></div>
+        <img id="practiceImage" class="practice-image" style="display:none;max-width:100%;border-radius:8px;margin-bottom:1rem" alt="">
+        <textarea id="input" class="input" placeholder="Start typing here"></textarea>
+        <div class="stats">
+            <span id="wpm">WPM: 0</span>
+            <span id="accuracy">Accuracy: 100%</span>
+            <span id="errors">Errors: 0</span>
+        </div>
+        <button id="restart" class="restart">New Paragraph</button>
+    </div>
+    <script src="main.js"></script>
+</body>  
+</html>
